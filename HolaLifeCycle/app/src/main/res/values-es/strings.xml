@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">HolaLifeCycle</string>
+    <string name="hello">
+        Cuando la app se ha iniciado:\n
+		- El usuario puede presionar el botón Retroceder\n
+		- El usuario puede presionar el botón Inicio\n
+		- El usuario puede apagar la pantalla\n
+		- Otra actividad se puede ejecutar sobre ésta\n
+		- El usuario puede cambiar la orientación de la pantalla
+	</string>
+
+</resources>
