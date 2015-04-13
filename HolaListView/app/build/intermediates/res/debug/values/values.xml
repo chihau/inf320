@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/chihau/AndroidStudioProjects/HolaListView/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="countries_array">
+        <item>Argentina</item>
+        <item>Bolivia</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Colombia</item>
+        <item>España</item>
+        <item>Estados Unidos</item>
+        <item>Francia</item>
+        <item>Italia</item>
+        <item>Panamá</item>
+        <item>Perú</item>
+        <item>Puerto Rico</item>
+        <item>Rusia</item>
+        <item>Uruguay</item>
+        <item>Venezuela</item>
+    </string-array>
+    <string name="app_name">HolaListView</string>
+    <!-- From: file:/Users/chihau/AndroidStudioProjects/HolaListView/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppTheme" parent="android:Theme.Light"/>
+</resources>
