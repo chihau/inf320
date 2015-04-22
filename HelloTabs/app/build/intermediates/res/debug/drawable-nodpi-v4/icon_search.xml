@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/action_search_blue"
+          android:state_selected="true" />
+    <item android:drawable="@drawable/action_search_gray" />
+</selector>
+<!-- From: file:/Users/chihau/AndroidStudioProjects/HelloTabs/app/src/main/res/drawable-nodpi/icon_search.xml -->

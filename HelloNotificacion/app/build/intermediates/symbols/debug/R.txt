@@ -1,0 +1,6 @@
+int drawable ic_launcher 0x7f020000
+int layout main 0x7f030000
+int layout second 0x7f030001
+int string app_name 0x7f040000
+int style AppBaseTheme 0x7f050000
+int style AppTheme 0x7f050001
