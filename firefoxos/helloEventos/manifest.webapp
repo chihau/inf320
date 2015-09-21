@@ -1,0 +1,36 @@
+{
+  "version": "0.1",
+  "name": "HelloEventos",
+  "description": "Sample app to test javascript events",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/app-icons/icon16x16.png",
+    "48": "/app-icons/icon48x48.png",
+    "60": "/app-icons/icon60x60.png",
+    "128": "/app-icons/icon128x128.png"
+  },
+  "developer": {
+    "name": "Chihau Chau",
+    "url": "http://charlas.no-ip.org/inf320"
+  },
+  "permissions": {
+    "desktop-notification": {
+      "description": "Needed for creating system notifications."
+    }
+  },
+  "locales": {
+    "es": {
+      "description": "App de ejemplo para probar los eventos en javascript",
+      "developer": {
+        "url": "http://charlas.no-ip.org/inf320"
+      }
+    },
+    "it": {
+      "description": "Campione App per gli eventi di test in javascript",
+      "developer": {
+        "url": "http://charlas.no-ip.org/inf320"
+      }
+    }
+  },
+  "default_locale": "en"
+}

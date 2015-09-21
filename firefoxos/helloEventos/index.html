@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>HelloEventos</title>
+
+	<link href="styles/app.css" rel="stylesheet" type="text/css">
+	<link href="styles/buttons.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<div>
+		<p>Estado de la batería</p>
+		<p id="cargando-bateria"></p>
+		<p id="porcentaje-bateria"></p>
+	</div>
+
+	<button class="recommend" id="alert-btn">Mostrar Alerta</button>
+	<button class="recommend" id="confirm-btn">Mostrar confirmación</button>
+	<button id="prompt-btn">Mostrar prompt</button>
+	<button class="bb-button danger" id="vibrate-btn">Vibrar</button>
+	<button class="recommend" id="install-btn">Install app</button>
+
+	<p id="respuesta-dialogo"></p>
+
+	<script src="scripts/app.js"></script>
+	<script src="scripts/install.js"></script>
+	<script src="scripts/notification.js"></script>
+	<script src="scripts/battery.js"></script>
+
+</body>
+</html>
