@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <link href="https://mdn.github.io/gaia-2.0-bb/headers.css" rel="stylesheet" type="text/css">
+  <link href="https://gaia-components.github.io/gaia-icons/gaia-icons-embedded.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="gmaps.js"></script>
+
+  <script type="text/javascript">
+    var map, lat, lng;
+
+    function geolocalizar(){
+      GMaps.geolocate({
+        success: function(position){
+          lat = position.coords.latitude;  // guarda coords en lat y lng
+          lng = position.coords.longitude;
+
+          //console.log('lat: ' + lat + ' lon: ' + lng);
+
+          map = new GMaps({  // muestra mapa centrado en coords [lat, lng]
+            el: '#map',
+            lat: lat,
+            lng: lng,
+            zoomControl : true,
+            zoomControlOpt: {
+              style : 'DEFAULT',
+              position: 'TOP_RIGHT'
+            },
+            streetViewControl : true,
+            mapTypeControl: true,
+          });
+          map.addMarker({ lat: lat, lng: lng});  // marcador en [lat, lng]
+        },
+        error: function(error) { alert('Error: '+error.message); },
+        not_supported: function(){ alert("No soporta geolocalización"); },
+      });
+    };
+
+    geolocalizar();
+  </script>
+</head>
+<body>
+  <section role="region">
+    <header>
+      <menu type="toolbar">
+        <button data-icon='location' onclick="geolocalizar()"></button>
+      </menu>
+      <h1>HelloGPSMaps</h1>
+    </header>
+  </section>
+  <section role="region">
+    <div role="main" id="map"></div>
+  </section>
+</body>
+</html>
