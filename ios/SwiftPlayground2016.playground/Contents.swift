@@ -1,8 +1,8 @@
-/* Playground - noun: a place where people can play */
+//: Playground - noun: a place where people can play
 
 // Se pueden importar frameworks (bibliotecas)
 import UIKit
-import Foundation
+//import Foundation
 
 var str = "Hello, playground"
 
@@ -20,6 +20,9 @@ let label = "The width is "
 let width = 94
 let widthLabel1 = label + String(width)
 
+// En caso de que swift tenga que inferir un flotante, siempre elegirá Double (en vez de Float)
+let pi = 3.14159
+
 // Podemos utilizar \() para referirnos al valor contenido en una variable o constante
 let widthLabel2 = "\(label) \(width)"
 
@@ -28,8 +31,43 @@ let oranges = 5
 let appleSummary = "I have \(apples) apples."
 let fruitSummary = "I have \(apples + oranges) pieces of fruit."
 
+//Conversión entre enteros y punto flotante
+let three = 3
+let pointOneFourOneFiveNine = 0.14159
+let pi2 = Double(three) + pointOneFourOneFiveNine
+// pi2 es de tipo Duoble
+
+let integerPi = Int(pi2)
+
+//Se crea un alias para la clase UInt64
+typealias AudioSample = UInt64
+
+var maxAmplitudeFound = AudioSample.max
+
+//booleanos
+
+let orangesAreOrange = true
+let turnipsAreDelicious = false
+
+if turnipsAreDelicious {
+    print("Mmm, tasty turnips!")
+} else {
+    print("Eww, turnips are horrible.")
+}
+
+
 // Soporta tuplas
 let (x, y) = (1, 2)
+print("X is \(x)")
+print("Y is \(y)")
+
+let http404Error = (404, "Not Found")
+let (statusCode, statusMessage) = http404Error
+print("The status code is \(http404Error.0)")
+print("The status message is \(http404Error.1)")
+
+//también se puede crear un tupla así
+let http200Status = (statusCode: 200, description: "OK")
 
 // Se usan [] para declarar arreglos y diccionarios
 var shoppingList = ["catfish", "water", "tulips", "blue paint"]
@@ -41,7 +79,7 @@ var occupations = [
 ]
 
 occupations["Jayne"] = "Public Relations"
-println(occupations["Jayne"])
+print(occupations["Jayne"])
 
 // Para declarar arreglos vacíos
 let emptyArray = [String]()
@@ -62,13 +100,12 @@ for score in individualScores {
         teamScore += 1
     }
 }
-println(teamScore)
+print(teamScore)
 
 var optionalString: String? = "Hello"
-println(optionalString == nil)
+print(optionalString == nil)
 
-// El signo ? se llama optional y es una muy buena forma de evitar que las variables tengan valores
-// nulos solo cuando el programador lo desee
+// El signo ? se llama optional y es una muy buena forma de asegurarse que las variables tengan valores nulos solo cuando el programador lo desee
 var optionalName: String? = "John Appleseed"
 var greeting = "Hello!"
 
@@ -90,6 +127,22 @@ userDefinedColorName = "green"
 colorNameToUse = userDefinedColorName ?? defaultColorName
 // userDefinedColorName is not nil, so colorNameToUse is set to "green"
 
+var surveyAnswer: String?
+print(surveyAnswer)
+
+
+if let firstNumber = Int("4") {
+    if let secondNumber = Int("42") {
+        if firstNumber < secondNumber && secondNumber < 100 {
+            print("\(firstNumber) < \(secondNumber) < 100")
+        }
+    }
+}
+
+if let firstNumber = Int("4"), let secondNumber = Int("42"), firstNumber < secondNumber && secondNumber < 100 {
+    print("\(firstNumber) < \(secondNumber) < 100")
+}
+
 let vegetable = "red pepper"
 switch vegetable {
 case "celery":
@@ -100,7 +153,7 @@ case let x where x.hasSuffix("pepper"):
     let vegetableComment = "Is it a spicy \(x)?"
 default:
     let vegetableComment = "Everything tastes good in soup."
-// Buena prueba sería eliminar la clausula default
+    // Buena prueba sería eliminar la clausula default
 }
 
 // Este es un diccionario que cada elemento tiene un arreglo de enteros
@@ -111,54 +164,55 @@ let interestingNumbers = [
 ]
 var largest = 0
 for (kind, numbers) in interestingNumbers {
-    println(kind)
+    print(kind)
     for number in numbers {
-        println(number)
+        print(number)
         if number > largest {
             largest = number
         }
     }
 }
-println(largest)
-
+print(largest)
 
 var n = 2
 while n < 100 {
     n = n * 2
 }
-println(n)
+print(n)
 
+// En la última versión de Swift se cambió do-while por repeat-while
 var m = 2
-do {
+repeat {
     m = m * 2
 } while m < 100
-println(m)
+print(m)
 
 var firstForLoop = 0
+// En swift 3 se eliminó el ciclo for al estilo C
+//for var i = 0; i < 4; ++i {
 for i in 0..<4 {
-    println(i)
+    print(i)
     firstForLoop += i
 }
-println(firstForLoop)
+print(firstForLoop)
 
 firstForLoop = 0
 for i in 0...6 {
-    println(i)
+    print(i)
     firstForLoop += i
 }
-println(firstForLoop)
+print(firstForLoop)
 
-var secondForLoop = 0
-for var i = 0; i < 4; ++i {
-    secondForLoop += i
+func greet(person: String) {
+    print("Hello, \(person)!")
 }
-println(secondForLoop)
+greet(person: "Dave")
 
 func greet(name: String, day: String) -> String {
     return "Hello \(name), today is \(day)."
     //return 0
 }
-greet("Bob", "Tuesday")
+greet(name: "Bob", day: "Tuesday")
 
 func calculateStatistics(scores: [Int]) -> (min: Int, max: Int, sum: Int) {
     var min = scores[0]
@@ -176,11 +230,11 @@ func calculateStatistics(scores: [Int]) -> (min: Int, max: Int, sum: Int) {
     
     return (min, max, sum)
 }
-let statistics = calculateStatistics([5, 3, 100, 3, 9])
-println(statistics.sum)
-println(statistics.0)
-println(statistics.1)
-println(statistics.2)
+let statistics = calculateStatistics(scores: [5, 3, 100, 3, 9])
+print(statistics.sum)
+print(statistics.0)
+print(statistics.1)
+print(statistics.2)
 
 // Función que permite devolver nil si es intenta calcular el factorial de un número negativo
 func factorial(number: Int) -> Int? { // Prueba quitando el signo ?
@@ -188,19 +242,19 @@ func factorial(number: Int) -> Int? { // Prueba quitando el signo ?
         return nil
     }
     var result = 1
-    for var factor = 1; factor <= number; ++factor {
+    for factor in 1...number {
         result = result * factor
     }
     return result
 }
-factorial(3)
-factorial(-3)
+factorial(number: 3)
+factorial(number: -3)
 
 // Esto va a tirar un error ya que el compilador ha detectado que la función factorial puede devolver dos tipos distintos de valores (un número o nulo)
 //factorial(3) + 7
 // Para que funcione debemos utilizar ! (implicitly unwrapped optional), "Sé que este opcional (?) posee un valor, por favor utilízalo"
-factorial(3)! + 7
-//factorial(-3)! + 7 // Esto tiraría un error al compilar (no sé porque playground no lo hace)
+factorial(number: 3)! + 7
+//factorial(number: -3)! + 7 // Esto tiraría un error al compilar
 
 func sumOf(numbers: Int...) -> Int {
     var sum = 0
@@ -210,7 +264,7 @@ func sumOf(numbers: Int...) -> Int {
     return sum
 }
 sumOf()
-sumOf(42, 597, 12)
+sumOf(numbers: 42, 597, 12)
 
 // Las funciones pueden ser anidadas y pueden acceder a las variables que pertenecen a la función padre
 func returnFifteen() -> Int {
@@ -223,8 +277,8 @@ func returnFifteen() -> Int {
 }
 returnFifteen()
 
-// Las funciones pueden returnar otras funciones
-func makeIncrementer() -> (Int -> Int) {
+// Las funciones pueden retornar otras funciones
+func makeIncrementer() -> ((Int) -> Int) {
     func addOne(number: Int) -> Int {
         return 1 + number
     }
@@ -234,7 +288,7 @@ var increment = makeIncrementer()
 increment(7)
 
 // Las funciones pueden recibir otras funciones como argunmento
-func hasAnyMatches(list: [Int], condition: Int -> Bool) -> Bool {
+func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
     for item in list {
         if condition(item) {
             return true
@@ -246,31 +300,26 @@ func lessThanTen(number: Int) -> Bool {
     return number < 10
 }
 var numbers = [20, 19, 7, 12]
-hasAnyMatches(numbers, lessThanTen)
+hasAnyMatches(list: numbers, condition: lessThanTen)
 
 // Se pueden utilizar trozos de código como funciones sin declarar el nombre de la función
 // El método map ejecuta una vez el trozo de código encerrado en {} para cada elemento del arreglo
 let mappedNumbers1 = numbers.map({
-(number: Int) -> Int in
-let result = 3 * number
-return result
+    (number: Int) -> Int in
+    let result = 3 * number
+    return result
 })
-println(mappedNumbers1)
+print(mappedNumbers1)
 
 // Igual a lo anterior pero más simple de escribir y entender
 let mappedNumbers2 = numbers.map({ number in 3 * number })
-println(mappedNumbers2)
+print(mappedNumbers2)
 
 // función sorted permite ordenar elementos y también soporta {}
-let sortedNumbers1 = sorted(numbers, { $0 > $1 })
-println(sortedNumbers1)
+let sortedNumbers1 = numbers.sorted(by: { $0 > $1 })
+print(sortedNumbers1)
 
-// Otra forma de usar la función
-let sortedNumbers2 = sorted(numbers) { $0 > $1 }
-println(sortedNumbers2)
-
-//No me gusta usar closures!!
-
+// Esto se llama closures!
 
 class Shape {
     var numberOfSides = 0
@@ -302,6 +351,7 @@ class NamedShape {
 var namedShape = NamedShape(name: "Shape")
 namedShape.numberOfSides = 7
 var shapeDescription2 = namedShape.simpleDescription()
+
 
 // Para la herencia, en vez de usar la palabra extends como en Java se utilizan los :
 // Una clase hija sólo puede tener un padre
@@ -349,15 +399,15 @@ class EquilateralTriangle: NamedShape {
             sideLength = newValue / 3.0
         }
     }
-
+    
     override func simpleDescription() -> String {
         return "An equilateral triangle with sides of length \(sideLength)."
     }
 }
 var triangle = EquilateralTriangle(sideLength: 3.1, name: "a triangle")
-println(triangle.perimeter)
+print(triangle.perimeter)
 triangle.perimeter = 9.9
-println(triangle.sideLength)
+print(triangle.sideLength)
 
 // Con willSet y didSet podemos ejecutar código que corra antes y después de que se le asigne un nuevo valor a una variable
 class TriangleAndSquare {
@@ -377,10 +427,10 @@ class TriangleAndSquare {
     }
 }
 var triangleAndSquare = TriangleAndSquare(size: 10, name: "another test shape")
-println(triangleAndSquare.square.sideLength)
-println(triangleAndSquare.triangle.sideLength)
+print(triangleAndSquare.square.sideLength)
+print(triangleAndSquare.triangle.sideLength)
 triangleAndSquare.square = Square(sideLength: 50, name: "larger square") // Asignamos un nuevo objeto a square
-println(triangleAndSquare.triangle.sideLength) // Automáticamente cambia la variable sideLength del triángulo
+print(triangleAndSquare.triangle.sideLength) // Automáticamente cambia la variable sideLength del triángulo
 
 class Counter {
     var count: Int = 0
@@ -392,9 +442,8 @@ class Counter {
     }
 }
 var counter = Counter()
-// Al invocar al método se deben especificar los nombres de los argumentos (Excepto del primer argumento que se puede omitir su nombre)
-counter.incrementBy(2, numberOfTimes: 7)
-//counter.incrementBy(2, times: 7)
+counter.incrementBy(amount: 2, numberOfTimes: 7)
+print(counter.count)
 
 // ?
 let optionalSquare: Square? = Square(sideLength: 2.5, name: "optional square")
@@ -489,14 +538,14 @@ case let .Error(error):
 }
 
 // Genericos: permiten la especificación y utilización tardía de los tipos de datos en funciones y clases
-func repeat<Item>(item: Item, times: Int) -> [Item] {
+/*func repeat<Item>(item: Item, times: Int) -> [Item] {
     var result = [Item]()
     for i in 0..<times {
         result.append(item)
     }
     return result
 }
-repeat("know", 4)
+repeat("know", 4)*/
 
 // Protocolo es una lista de métodos que especifícan un "contrato" o "interface"
 protocol Speaker {
@@ -506,13 +555,13 @@ protocol Speaker {
 // Todas las clases que se ajustan a este protocolo tienen que implementar los métodos que se definieron en él
 class Vicki: Speaker {
     func speak() {
-        println("Hello, I am Vicki!")
+        print("Hello, I am Vicki!")
     }
 }
 
 class Ray: Speaker {
     func speak() {
-        println("Yo, I am Ray!")
+        print("Yo, I am Ray!")
     }
 }
 var ray = Ray()
@@ -526,9 +575,11 @@ class Animal {
 }
 class Dog: Animal, Speaker {
     func speak() {
-        println("Woof!")
+        print("Woof!")
     }
 }
 var dog = Dog()
 dog.speak()
+
+
 

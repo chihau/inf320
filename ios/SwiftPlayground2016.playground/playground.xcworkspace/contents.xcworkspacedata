@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../XcodeProjects/MyPlayground3.playground">
+      location = "self:">
    </FileRef>
 </Workspace>
