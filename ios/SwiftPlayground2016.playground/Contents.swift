@@ -302,6 +302,21 @@ func lessThanTen(number: Int) -> Bool {
 var numbers = [20, 19, 7, 12]
 hasAnyMatches(list: numbers, condition: lessThanTen)
 
+// Argument Label: se utiliza cuando uno llama a la función
+// Parameter Name: se utiliza cuando se declara una función
+// Por defecto se utiliza el parameter name como argument label, cuando no se especifica el argument label
+func greet(person: String, from hometown: String) -> String {
+    return "Hello \(person)!  Glad you could visit from \(hometown)."
+}
+// En la función anterior "from" es argument label y "hometown" es parameter name
+print(greet(person: "Bill", from: "Cupertino"))
+
+// Si se desea omitir el argument label para un parameter, se debe utilizar "_" en vez del nombre del argument label
+func someFunction(_ firstParameterName: Int, secondParameterName: Int) {
+    // No hace nada
+}
+someFunction(1, secondParameterName: 2)
+
 // Se pueden utilizar trozos de código como funciones sin declarar el nombre de la función
 // El método map ejecuta una vez el trozo de código encerrado en {} para cada elemento del arreglo
 let mappedNumbers1 = numbers.map({
@@ -431,19 +446,6 @@ print(triangleAndSquare.square.sideLength)
 print(triangleAndSquare.triangle.sideLength)
 triangleAndSquare.square = Square(sideLength: 50, name: "larger square") // Asignamos un nuevo objeto a square
 print(triangleAndSquare.triangle.sideLength) // Automáticamente cambia la variable sideLength del triángulo
-
-class Counter {
-    var count: Int = 0
-    // Los parámetros de una función pueden tener un segundo nombre que sólo puede ser usado dentro de la función
-    // (a mi me parece que es algo un poco engorroso y no recomiendo su uso)
-    func incrementBy(amount: Int, numberOfTimes times: Int) {
-        count += amount * times
-        //count += amount * numberOfTimes
-    }
-}
-var counter = Counter()
-counter.incrementBy(amount: 2, numberOfTimes: 7)
-print(counter.count)
 
 // ?
 let optionalSquare: Square? = Square(sideLength: 2.5, name: "optional square")
