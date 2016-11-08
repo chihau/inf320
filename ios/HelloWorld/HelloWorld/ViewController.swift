@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  HelloWorld
 //
-//  Created by Chihau Chau on 13-05-15.
-//  Copyright (c) 2015 Chihau Chau. All rights reserved.
+//  Created by Chihau Chau on 03-11-16.
+//  Copyright © 2016 Chihau Chau. All rights reserved.
 //
 
 import UIKit
