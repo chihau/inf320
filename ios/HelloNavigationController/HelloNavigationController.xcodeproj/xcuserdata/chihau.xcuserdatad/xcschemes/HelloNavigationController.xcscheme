@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "69B53D461DD4996E006337B6"
-               BuildableName = "HelloTabs.app"
-               BlueprintName = "HelloTabs"
-               ReferencedContainer = "container:HelloTabs.xcodeproj">
+               BlueprintIdentifier = "69B53D0C1DD425CF006337B6"
+               BuildableName = "HelloNavigationController.app"
+               BlueprintName = "HelloNavigationController"
+               ReferencedContainer = "container:HelloNavigationController.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "69B53D5A1DD4996E006337B6"
-               BuildableName = "HelloTabsTests.xctest"
-               BlueprintName = "HelloTabsTests"
-               ReferencedContainer = "container:HelloTabs.xcodeproj">
+               BlueprintIdentifier = "69B53D201DD425CF006337B6"
+               BuildableName = "HelloNavigationControllerTests.xctest"
+               BlueprintName = "HelloNavigationControllerTests"
+               ReferencedContainer = "container:HelloNavigationController.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "69B53D651DD4996E006337B6"
-               BuildableName = "HelloTabsUITests.xctest"
-               BlueprintName = "HelloTabsUITests"
-               ReferencedContainer = "container:HelloTabs.xcodeproj">
+               BlueprintIdentifier = "69B53D2B1DD425CF006337B6"
+               BuildableName = "HelloNavigationControllerUITests.xctest"
+               BlueprintName = "HelloNavigationControllerUITests"
+               ReferencedContainer = "container:HelloNavigationController.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "69B53D461DD4996E006337B6"
-            BuildableName = "HelloTabs.app"
-            BlueprintName = "HelloTabs"
-            ReferencedContainer = "container:HelloTabs.xcodeproj">
+            BlueprintIdentifier = "69B53D0C1DD425CF006337B6"
+            BuildableName = "HelloNavigationController.app"
+            BlueprintName = "HelloNavigationController"
+            ReferencedContainer = "container:HelloNavigationController.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "69B53D461DD4996E006337B6"
-            BuildableName = "HelloTabs.app"
-            BlueprintName = "HelloTabs"
-            ReferencedContainer = "container:HelloTabs.xcodeproj">
+            BlueprintIdentifier = "69B53D0C1DD425CF006337B6"
+            BuildableName = "HelloNavigationController.app"
+            BlueprintName = "HelloNavigationController"
+            ReferencedContainer = "container:HelloNavigationController.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "69B53D461DD4996E006337B6"
-            BuildableName = "HelloTabs.app"
-            BlueprintName = "HelloTabs"
-            ReferencedContainer = "container:HelloTabs.xcodeproj">
+            BlueprintIdentifier = "69B53D0C1DD425CF006337B6"
+            BuildableName = "HelloNavigationController.app"
+            BlueprintName = "HelloNavigationController"
+            ReferencedContainer = "container:HelloNavigationController.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

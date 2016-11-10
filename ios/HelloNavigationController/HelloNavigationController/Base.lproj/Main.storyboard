@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Lma-2e-r63">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Elija un color-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloNavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xae-xa-hZH">
+                                <rect key="frame" x="172" y="318" width="31" height="30"/>
+                                <state key="normal" title="Rojo">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Hhc-Rd-yLP" kind="show" identifier="redSegue" id="Evv-Zo-7Bw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idM-P6-nxJ">
+                                <rect key="frame" x="173" y="412" width="30" height="30"/>
+                                <state key="normal" title="Azul"/>
+                                <connections>
+                                    <segue destination="Hhc-Rd-yLP" kind="show" identifier="blueSegue" id="bXI-aw-SH5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="idM-P6-nxJ" firstAttribute="top" secondItem="xae-xa-hZH" secondAttribute="bottom" constant="64" id="K7T-Rv-nmC"/>
+                            <constraint firstItem="xae-xa-hZH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qbv-tn-fid"/>
+                            <constraint firstItem="xae-xa-hZH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QdN-dG-dSa"/>
+                            <constraint firstItem="idM-P6-nxJ" firstAttribute="trailing" secondItem="xae-xa-hZH" secondAttribute="trailing" id="yau-AN-GTh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Elija un color" id="XVl-YU-GU4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="137.18140929535232"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OM1-9j-aFz">
+            <objects>
+                <viewController id="Hhc-Rd-yLP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2k8-4H-Q2C"/>
+                        <viewControllerLayoutGuide type="bottom" id="beW-Of-r9Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gOV-Dy-wl6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ttE-qW-d8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="137"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QW8-Gf-QVB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lma-2e-r63" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9xF-Yc-uMg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ocZ-uq-nNy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lc3-Un-vOh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82.400000000000006" y="791.15442278860576"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bXI-aw-SH5"/>
+    </inferredMetricsTieBreakers>
+</document>

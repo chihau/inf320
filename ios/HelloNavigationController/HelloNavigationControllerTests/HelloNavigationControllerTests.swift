@@ -1,15 +1,15 @@
 //
-//  HelloTabsTests.swift
-//  HelloTabsTests
+//  HelloNavigationControllerTests.swift
+//  HelloNavigationControllerTests
 //
 //  Created by Chihau Chau on 10-11-16.
 //  Copyright © 2016 Chihau Chau. All rights reserved.
 //
 
 import XCTest
-@testable import HelloTabs
+@testable import HelloNavigationController
 
-class HelloTabsTests: XCTestCase {
+class HelloNavigationControllerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

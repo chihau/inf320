@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  HelloTabs
+//  HelloNavigationController
 //
 //  Created by Chihau Chau on 10-11-16.
 //  Copyright © 2016 Chihau Chau. All rights reserved.

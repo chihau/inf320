@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>HelloTabs.xcscheme</key>
+		<key>HelloNavigationController.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>69B53D461DD4996E006337B6</key>
+		<key>69B53D0C1DD425CF006337B6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>69B53D5A1DD4996E006337B6</key>
+		<key>69B53D201DD425CF006337B6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>69B53D651DD4996E006337B6</key>
+		<key>69B53D2B1DD425CF006337B6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
