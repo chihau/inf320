@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0630"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,91 +14,90 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "690CA5D81B2620AD00F275B4"
-               BuildableName = "HolaPaises.app"
-               BlueprintName = "HolaPaises"
-               ReferencedContainer = "container:HolaPaises.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "690CA5ED1B2620AD00F275B4"
-               BuildableName = "HolaPaisesTests.xctest"
-               BlueprintName = "HolaPaisesTests"
-               ReferencedContainer = "container:HolaPaises.xcodeproj">
+               BlueprintIdentifier = "690A26CC1DDB48E9003933DF"
+               BuildableName = "HelloPaises.app"
+               BlueprintName = "HelloPaises"
+               ReferencedContainer = "container:HelloPaises.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Debug">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "690CA5ED1B2620AD00F275B4"
-               BuildableName = "HolaPaisesTests.xctest"
-               BlueprintName = "HolaPaisesTests"
-               ReferencedContainer = "container:HolaPaises.xcodeproj">
+               BlueprintIdentifier = "690A26E01DDB48E9003933DF"
+               BuildableName = "HelloPaisesTests.xctest"
+               BlueprintName = "HelloPaisesTests"
+               ReferencedContainer = "container:HelloPaises.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "690A26EB1DDB48EA003933DF"
+               BuildableName = "HelloPaisesUITests.xctest"
+               BlueprintName = "HelloPaisesUITests"
+               ReferencedContainer = "container:HelloPaises.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "690CA5D81B2620AD00F275B4"
-            BuildableName = "HolaPaises.app"
-            BlueprintName = "HolaPaises"
-            ReferencedContainer = "container:HolaPaises.xcodeproj">
+            BlueprintIdentifier = "690A26CC1DDB48E9003933DF"
+            BuildableName = "HelloPaises.app"
+            BlueprintName = "HelloPaises"
+            ReferencedContainer = "container:HelloPaises.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </TestAction>
    <LaunchAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "690CA5D81B2620AD00F275B4"
-            BuildableName = "HolaPaises.app"
-            BlueprintName = "HolaPaises"
-            ReferencedContainer = "container:HolaPaises.xcodeproj">
+            BlueprintIdentifier = "690A26CC1DDB48E9003933DF"
+            BuildableName = "HelloPaises.app"
+            BlueprintName = "HelloPaises"
+            ReferencedContainer = "container:HelloPaises.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "690CA5D81B2620AD00F275B4"
-            BuildableName = "HolaPaises.app"
-            BlueprintName = "HolaPaises"
-            ReferencedContainer = "container:HolaPaises.xcodeproj">
+            BlueprintIdentifier = "690A26CC1DDB48E9003933DF"
+            BuildableName = "HelloPaises.app"
+            BlueprintName = "HelloPaises"
+            ReferencedContainer = "container:HelloPaises.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

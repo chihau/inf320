@@ -1,15 +1,15 @@
 //
-//  HolaPaisesTests.swift
-//  HolaPaisesTests
+//  HelloPaisesTests.swift
+//  HelloPaisesTests
 //
-//  Created by Chihau Chau on 08-06-15.
-//  Copyright (c) 2015 Chihau Chau. All rights reserved.
+//  Created by Chihau Chau on 15-11-16.
+//  Copyright © 2016 Chihau Chau. All rights reserved.
 //
 
-import UIKit
 import XCTest
+@testable import HelloPaises
 
-class HolaPaisesTests: XCTestCase {
+class HelloPaisesTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -23,12 +23,12 @@ class HolaPaisesTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock() {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }

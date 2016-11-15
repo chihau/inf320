@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>HolaPaises.xcscheme</key>
+		<key>HelloPaises.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>690CA5D81B2620AD00F275B4</key>
+		<key>690A26CC1DDB48E9003933DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>690CA5ED1B2620AD00F275B4</key>
+		<key>690A26E01DDB48E9003933DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>690A26EB1DDB48EA003933DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
