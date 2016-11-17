@@ -2,15 +2,15 @@
 //  Annotation.swift
 //  HelloMapKit
 //
-//  Created by Chihau Chau on 08-06-15.
-//  Copyright (c) 2015 Chihau Chau. All rights reserved.
+//  Created by Chihau Chau on 17-11-16.
+//  Copyright © 2016 Chihau Chau. All rights reserved.
 //
 
 import MapKit
 
 class Annotation: NSObject, MKAnnotation {
-    let title: String
-    let subtitle: String
+    let title: String?
+    let subtitle: String?
     let coordinate: CLLocationCoordinate2D
     
     init(title: String, subtitle: String, coordinate: CLLocationCoordinate2D) {
@@ -20,5 +20,5 @@ class Annotation: NSObject, MKAnnotation {
         
         super.init()
     }
-
+    
 }

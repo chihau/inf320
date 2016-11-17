@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0630"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,41 +14,37 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "690CA5A81B25F8CF00F275B4"
+               BlueprintIdentifier = "69AEFE101DDD61F4005A12BD"
                BuildableName = "HelloMapKit.app"
                BlueprintName = "HelloMapKit"
-               ReferencedContainer = "container:HelloMapKit.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "690CA5BD1B25F8CF00F275B4"
-               BuildableName = "HelloMapKitTests.xctest"
-               BlueprintName = "HelloMapKitTests"
                ReferencedContainer = "container:HelloMapKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Debug">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "690CA5BD1B25F8CF00F275B4"
+               BlueprintIdentifier = "69AEFE241DDD61F5005A12BD"
                BuildableName = "HelloMapKitTests.xctest"
                BlueprintName = "HelloMapKitTests"
+               ReferencedContainer = "container:HelloMapKit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "69AEFE2F1DDD61F5005A12BD"
+               BuildableName = "HelloMapKitUITests.xctest"
+               BlueprintName = "HelloMapKitUITests"
                ReferencedContainer = "container:HelloMapKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,27 +52,30 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "690CA5A81B25F8CF00F275B4"
+            BlueprintIdentifier = "69AEFE101DDD61F4005A12BD"
             BuildableName = "HelloMapKit.app"
             BlueprintName = "HelloMapKit"
             ReferencedContainer = "container:HelloMapKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </TestAction>
    <LaunchAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "690CA5A81B25F8CF00F275B4"
+            BlueprintIdentifier = "69AEFE101DDD61F4005A12BD"
             BuildableName = "HelloMapKit.app"
             BlueprintName = "HelloMapKit"
             ReferencedContainer = "container:HelloMapKit.xcodeproj">
@@ -86,16 +85,16 @@
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "690CA5A81B25F8CF00F275B4"
+            BlueprintIdentifier = "69AEFE101DDD61F4005A12BD"
             BuildableName = "HelloMapKit.app"
             BlueprintName = "HelloMapKit"
             ReferencedContainer = "container:HelloMapKit.xcodeproj">
