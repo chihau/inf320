@@ -1,51 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="HelloImageView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloImageView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XNt-gZ-zgX">
-                                <rect key="frame" x="-13" y="112" width="613" height="420"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QDI-bq-eE3">
+                                <rect key="frame" x="0.0" y="216" width="375" height="234"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFc-Rb-dSe">
-                                <rect key="frame" x="176" y="67" width="249" height="30"/>
-                                <state key="normal" title="Seleccione una foto desde la galería">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BI5-G3-Vqx">
+                                <rect key="frame" x="64" y="28" width="247" height="30"/>
+                                <state key="normal" title="Seleccione una foto desde la galería"/>
                                 <connections>
-                                    <action selector="abrirPhotoLibrary:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lkW-DZ-NnD"/>
+                                    <action selector="openPhotoLibrary:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GXA-LW-BCK"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="cFc-Rb-dSe" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="5tN-rj-OfE"/>
-                            <constraint firstItem="cFc-Rb-dSe" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="47" id="DG9-KI-OmR"/>
-                            <constraint firstAttribute="trailing" secondItem="XNt-gZ-zgX" secondAttribute="trailing" id="DQi-XF-fy2"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="XNt-gZ-zgX" secondAttribute="bottom" constant="68" id="GMb-Vk-RjF"/>
-                            <constraint firstItem="XNt-gZ-zgX" firstAttribute="top" secondItem="cFc-Rb-dSe" secondAttribute="bottom" constant="15" id="edo-rO-m1W"/>
-                            <constraint firstItem="XNt-gZ-zgX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-29" id="y3a-eH-nGB"/>
+                            <constraint firstItem="QDI-bq-eE3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="URf-ok-ucv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QDI-bq-eE3" secondAttribute="bottom" constant="217" id="Vvm-FL-TL0"/>
+                            <constraint firstItem="QDI-bq-eE3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XvL-kL-Res"/>
+                            <constraint firstItem="BI5-G3-Vqx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="c6a-eJ-7i0"/>
+                            <constraint firstAttribute="trailing" secondItem="QDI-bq-eE3" secondAttribute="trailing" id="fWL-ze-VEL"/>
+                            <constraint firstItem="BI5-G3-Vqx" firstAttribute="centerX" secondItem="QDI-bq-eE3" secondAttribute="centerX" id="fWw-w7-Gft"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="XNt-gZ-zgX" id="70V-10-Cq6"/>
+                        <outlet property="imageView" destination="QDI-bq-eE3" id="kSR-2i-t82"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="137.18140929535232"/>
         </scene>
     </scenes>
 </document>
