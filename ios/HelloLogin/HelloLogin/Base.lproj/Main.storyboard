@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,49 +13,45 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloLogin" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No ha iniciado sesión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Erc-SO-etL">
-                                <rect key="frame" x="106.5" y="323" width="162" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No ha iniciado sesión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzr-Y4-qcp">
+                                <rect key="frame" x="106" y="323" width="162" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHu-v4-r4o">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtg-tF-Aac">
                                 <rect key="frame" x="16" y="617" width="343" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Login">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UwE-R6-CAD"/>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WSQ-wg-pxR"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.6315091942708051" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.63150919429999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="tHu-v4-r4o" secondAttribute="leading" id="151-OU-xij"/>
-                            <constraint firstItem="tHu-v4-r4o" firstAttribute="centerX" secondItem="Erc-SO-etL" secondAttribute="centerX" id="FV7-XD-wp4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="tHu-v4-r4o" secondAttribute="trailing" id="Ij0-ee-D5C"/>
-                            <constraint firstItem="Erc-SO-etL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bvg-lf-PVM"/>
-                            <constraint firstAttribute="bottom" secondItem="tHu-v4-r4o" secondAttribute="bottom" constant="20" symbolic="YES" id="ed4-xJ-1gB"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tHu-v4-r4o" secondAttribute="bottom" constant="20" id="vvG-AU-qSm"/>
-                            <constraint firstItem="Erc-SO-etL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yhp-q1-ciY"/>
+                            <constraint firstItem="pzr-Y4-qcp" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="6hY-by-jWF"/>
+                            <constraint firstItem="xtg-tF-Aac" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="PsU-IB-BO6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xtg-tF-Aac" secondAttribute="trailing" constant="16" id="Psw-N1-t2P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xtg-tF-Aac" secondAttribute="bottom" constant="20" id="cB6-OJ-K49"/>
+                            <constraint firstItem="pzr-Y4-qcp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xGP-Dy-6lE"/>
+                            <constraint firstItem="xtg-tF-Aac" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="z5O-hK-Dd8"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="loginLabel" destination="Erc-SO-etL" id="jcy-6U-vdO"/>
+                        <outlet property="loginLabel" destination="pzr-Y4-qcp" id="FaI-Fp-AYe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
+            <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
