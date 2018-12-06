@@ -3,70 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69AEFE151DDD61F4005A12BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AEFE141DDD61F4005A12BD /* AppDelegate.swift */; };
-		69AEFE171DDD61F4005A12BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AEFE161DDD61F4005A12BD /* ViewController.swift */; };
-		69AEFE1A1DDD61F5005A12BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69AEFE181DDD61F5005A12BD /* Main.storyboard */; };
-		69AEFE1C1DDD61F5005A12BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69AEFE1B1DDD61F5005A12BD /* Assets.xcassets */; };
-		69AEFE1F1DDD61F5005A12BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69AEFE1D1DDD61F5005A12BD /* LaunchScreen.storyboard */; };
-		69AEFE2A1DDD61F5005A12BD /* HelloMapKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AEFE291DDD61F5005A12BD /* HelloMapKitTests.swift */; };
-		69AEFE351DDD61F5005A12BD /* HelloMapKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AEFE341DDD61F5005A12BD /* HelloMapKitUITests.swift */; };
-		69AEFE431DDD6612005A12BD /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AEFE421DDD6612005A12BD /* Annotation.swift */; };
+		694FF6C321B8DA9400E79120 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694FF6C221B8DA9400E79120 /* AppDelegate.swift */; };
+		694FF6C521B8DA9400E79120 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694FF6C421B8DA9400E79120 /* ViewController.swift */; };
+		694FF6C821B8DA9400E79120 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694FF6C621B8DA9400E79120 /* Main.storyboard */; };
+		694FF6CA21B8DA9500E79120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694FF6C921B8DA9500E79120 /* Assets.xcassets */; };
+		694FF6CD21B8DA9500E79120 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694FF6CB21B8DA9500E79120 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		69AEFE261DDD61F5005A12BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 69AEFE091DDD61F4005A12BD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 69AEFE101DDD61F4005A12BD;
-			remoteInfo = HelloMapKit;
-		};
-		69AEFE311DDD61F5005A12BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 69AEFE091DDD61F4005A12BD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 69AEFE101DDD61F4005A12BD;
-			remoteInfo = HelloMapKit;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		69AEFE111DDD61F4005A12BD /* HelloMapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloMapKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		69AEFE141DDD61F4005A12BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69AEFE161DDD61F4005A12BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		69AEFE191DDD61F5005A12BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		69AEFE1B1DDD61F5005A12BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		69AEFE1E1DDD61F5005A12BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		69AEFE201DDD61F5005A12BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69AEFE251DDD61F5005A12BD /* HelloMapKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloMapKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		69AEFE291DDD61F5005A12BD /* HelloMapKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloMapKitTests.swift; sourceTree = "<group>"; };
-		69AEFE2B1DDD61F5005A12BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69AEFE301DDD61F5005A12BD /* HelloMapKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloMapKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		69AEFE341DDD61F5005A12BD /* HelloMapKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloMapKitUITests.swift; sourceTree = "<group>"; };
-		69AEFE361DDD61F5005A12BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69AEFE421DDD6612005A12BD /* Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		694FF6BF21B8DA9400E79120 /* HelloMapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloMapKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		694FF6C221B8DA9400E79120 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		694FF6C421B8DA9400E79120 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		694FF6C721B8DA9400E79120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		694FF6C921B8DA9500E79120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		694FF6CC21B8DA9500E79120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		694FF6CE21B8DA9500E79120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		69AEFE0E1DDD61F4005A12BD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69AEFE221DDD61F5005A12BD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69AEFE2D1DDD61F5005A12BD /* Frameworks */ = {
+		694FF6BC21B8DA9400E79120 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,68 +35,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		69AEFE081DDD61F4005A12BD = {
+		694FF6B621B8DA9300E79120 = {
 			isa = PBXGroup;
 			children = (
-				69AEFE131DDD61F4005A12BD /* HelloMapKit */,
-				69AEFE281DDD61F5005A12BD /* HelloMapKitTests */,
-				69AEFE331DDD61F5005A12BD /* HelloMapKitUITests */,
-				69AEFE121DDD61F4005A12BD /* Products */,
+				694FF6C121B8DA9400E79120 /* HelloMapKit */,
+				694FF6C021B8DA9400E79120 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		69AEFE121DDD61F4005A12BD /* Products */ = {
+		694FF6C021B8DA9400E79120 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				69AEFE111DDD61F4005A12BD /* HelloMapKit.app */,
-				69AEFE251DDD61F5005A12BD /* HelloMapKitTests.xctest */,
-				69AEFE301DDD61F5005A12BD /* HelloMapKitUITests.xctest */,
+				694FF6BF21B8DA9400E79120 /* HelloMapKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		69AEFE131DDD61F4005A12BD /* HelloMapKit */ = {
+		694FF6C121B8DA9400E79120 /* HelloMapKit */ = {
 			isa = PBXGroup;
 			children = (
-				69AEFE141DDD61F4005A12BD /* AppDelegate.swift */,
-				69AEFE161DDD61F4005A12BD /* ViewController.swift */,
-				69AEFE181DDD61F5005A12BD /* Main.storyboard */,
-				69AEFE1B1DDD61F5005A12BD /* Assets.xcassets */,
-				69AEFE1D1DDD61F5005A12BD /* LaunchScreen.storyboard */,
-				69AEFE201DDD61F5005A12BD /* Info.plist */,
-				69AEFE421DDD6612005A12BD /* Annotation.swift */,
+				694FF6C221B8DA9400E79120 /* AppDelegate.swift */,
+				694FF6C421B8DA9400E79120 /* ViewController.swift */,
+				694FF6C621B8DA9400E79120 /* Main.storyboard */,
+				694FF6C921B8DA9500E79120 /* Assets.xcassets */,
+				694FF6CB21B8DA9500E79120 /* LaunchScreen.storyboard */,
+				694FF6CE21B8DA9500E79120 /* Info.plist */,
 			);
 			path = HelloMapKit;
-			sourceTree = "<group>";
-		};
-		69AEFE281DDD61F5005A12BD /* HelloMapKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				69AEFE291DDD61F5005A12BD /* HelloMapKitTests.swift */,
-				69AEFE2B1DDD61F5005A12BD /* Info.plist */,
-			);
-			path = HelloMapKitTests;
-			sourceTree = "<group>";
-		};
-		69AEFE331DDD61F5005A12BD /* HelloMapKitUITests */ = {
-			isa = PBXGroup;
-			children = (
-				69AEFE341DDD61F5005A12BD /* HelloMapKitUITests.swift */,
-				69AEFE361DDD61F5005A12BD /* Info.plist */,
-			);
-			path = HelloMapKitUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		69AEFE101DDD61F4005A12BD /* HelloMapKit */ = {
+		694FF6BE21B8DA9400E79120 /* HelloMapKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 69AEFE391DDD61F5005A12BD /* Build configuration list for PBXNativeTarget "HelloMapKit" */;
+			buildConfigurationList = 694FF6D121B8DA9500E79120 /* Build configuration list for PBXNativeTarget "HelloMapKit" */;
 			buildPhases = (
-				69AEFE0D1DDD61F4005A12BD /* Sources */,
-				69AEFE0E1DDD61F4005A12BD /* Frameworks */,
-				69AEFE0F1DDD61F4005A12BD /* Resources */,
+				694FF6BB21B8DA9400E79120 /* Sources */,
+				694FF6BC21B8DA9400E79120 /* Frameworks */,
+				694FF6BD21B8DA9400E79120 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -145,173 +81,80 @@
 			);
 			name = HelloMapKit;
 			productName = HelloMapKit;
-			productReference = 69AEFE111DDD61F4005A12BD /* HelloMapKit.app */;
+			productReference = 694FF6BF21B8DA9400E79120 /* HelloMapKit.app */;
 			productType = "com.apple.product-type.application";
-		};
-		69AEFE241DDD61F5005A12BD /* HelloMapKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 69AEFE3C1DDD61F5005A12BD /* Build configuration list for PBXNativeTarget "HelloMapKitTests" */;
-			buildPhases = (
-				69AEFE211DDD61F5005A12BD /* Sources */,
-				69AEFE221DDD61F5005A12BD /* Frameworks */,
-				69AEFE231DDD61F5005A12BD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				69AEFE271DDD61F5005A12BD /* PBXTargetDependency */,
-			);
-			name = HelloMapKitTests;
-			productName = HelloMapKitTests;
-			productReference = 69AEFE251DDD61F5005A12BD /* HelloMapKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		69AEFE2F1DDD61F5005A12BD /* HelloMapKitUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 69AEFE3F1DDD61F5005A12BD /* Build configuration list for PBXNativeTarget "HelloMapKitUITests" */;
-			buildPhases = (
-				69AEFE2C1DDD61F5005A12BD /* Sources */,
-				69AEFE2D1DDD61F5005A12BD /* Frameworks */,
-				69AEFE2E1DDD61F5005A12BD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				69AEFE321DDD61F5005A12BD /* PBXTargetDependency */,
-			);
-			name = HelloMapKitUITests;
-			productName = HelloMapKitUITests;
-			productReference = 69AEFE301DDD61F5005A12BD /* HelloMapKitUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		69AEFE091DDD61F4005A12BD /* Project object */ = {
+		694FF6B721B8DA9300E79120 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Chihau Chau";
 				TargetAttributes = {
-					69AEFE101DDD61F4005A12BD = {
-						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
-					};
-					69AEFE241DDD61F5005A12BD = {
-						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 69AEFE101DDD61F4005A12BD;
-					};
-					69AEFE2F1DDD61F5005A12BD = {
-						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 69AEFE101DDD61F4005A12BD;
+					694FF6BE21B8DA9400E79120 = {
+						CreatedOnToolsVersion = 10.0;
 					};
 				};
 			};
-			buildConfigurationList = 69AEFE0C1DDD61F4005A12BD /* Build configuration list for PBXProject "HelloMapKit" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 694FF6BA21B8DA9300E79120 /* Build configuration list for PBXProject "HelloMapKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 69AEFE081DDD61F4005A12BD;
-			productRefGroup = 69AEFE121DDD61F4005A12BD /* Products */;
+			mainGroup = 694FF6B621B8DA9300E79120;
+			productRefGroup = 694FF6C021B8DA9400E79120 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				69AEFE101DDD61F4005A12BD /* HelloMapKit */,
-				69AEFE241DDD61F5005A12BD /* HelloMapKitTests */,
-				69AEFE2F1DDD61F5005A12BD /* HelloMapKitUITests */,
+				694FF6BE21B8DA9400E79120 /* HelloMapKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		69AEFE0F1DDD61F4005A12BD /* Resources */ = {
+		694FF6BD21B8DA9400E79120 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69AEFE1F1DDD61F5005A12BD /* LaunchScreen.storyboard in Resources */,
-				69AEFE1C1DDD61F5005A12BD /* Assets.xcassets in Resources */,
-				69AEFE1A1DDD61F5005A12BD /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69AEFE231DDD61F5005A12BD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69AEFE2E1DDD61F5005A12BD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				694FF6CD21B8DA9500E79120 /* LaunchScreen.storyboard in Resources */,
+				694FF6CA21B8DA9500E79120 /* Assets.xcassets in Resources */,
+				694FF6C821B8DA9400E79120 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		69AEFE0D1DDD61F4005A12BD /* Sources */ = {
+		694FF6BB21B8DA9400E79120 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69AEFE171DDD61F4005A12BD /* ViewController.swift in Sources */,
-				69AEFE431DDD6612005A12BD /* Annotation.swift in Sources */,
-				69AEFE151DDD61F4005A12BD /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69AEFE211DDD61F5005A12BD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69AEFE2A1DDD61F5005A12BD /* HelloMapKitTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69AEFE2C1DDD61F5005A12BD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69AEFE351DDD61F5005A12BD /* HelloMapKitUITests.swift in Sources */,
+				694FF6C521B8DA9400E79120 /* ViewController.swift in Sources */,
+				694FF6C321B8DA9400E79120 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		69AEFE271DDD61F5005A12BD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 69AEFE101DDD61F4005A12BD /* HelloMapKit */;
-			targetProxy = 69AEFE261DDD61F5005A12BD /* PBXContainerItemProxy */;
-		};
-		69AEFE321DDD61F5005A12BD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 69AEFE101DDD61F4005A12BD /* HelloMapKit */;
-			targetProxy = 69AEFE311DDD61F5005A12BD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		69AEFE181DDD61F5005A12BD /* Main.storyboard */ = {
+		694FF6C621B8DA9400E79120 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				69AEFE191DDD61F5005A12BD /* Base */,
+				694FF6C721B8DA9400E79120 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		69AEFE1D1DDD61F5005A12BD /* LaunchScreen.storyboard */ = {
+		694FF6CB21B8DA9500E79120 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				69AEFE1E1DDD61F5005A12BD /* Base */,
+				694FF6CC21B8DA9500E79120 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -319,33 +162,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		69AEFE371DDD61F5005A12BD /* Debug */ = {
+		694FF6CF21B8DA9500E79120 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -359,43 +213,54 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		69AEFE381DDD61F5005A12BD /* Release */ = {
+		694FF6D021B8DA9500E79120 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -403,130 +268,72 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		69AEFE3A1DDD61F5005A12BD /* Debug */ = {
+		694FF6D221B8DA9500E79120 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HelloMapKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cl.chihau.HelloMapKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		69AEFE3B1DDD61F5005A12BD /* Release */ = {
+		694FF6D321B8DA9500E79120 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HelloMapKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cl.chihau.HelloMapKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		69AEFE3D1DDD61F5005A12BD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = HelloMapKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cl.chihau.HelloMapKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloMapKit.app/HelloMapKit";
-			};
-			name = Debug;
-		};
-		69AEFE3E1DDD61F5005A12BD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = HelloMapKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cl.chihau.HelloMapKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloMapKit.app/HelloMapKit";
-			};
-			name = Release;
-		};
-		69AEFE401DDD61F5005A12BD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = HelloMapKitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cl.chihau.HelloMapKitUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = HelloMapKit;
-			};
-			name = Debug;
-		};
-		69AEFE411DDD61F5005A12BD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = HelloMapKitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cl.chihau.HelloMapKitUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = HelloMapKit;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		69AEFE0C1DDD61F4005A12BD /* Build configuration list for PBXProject "HelloMapKit" */ = {
+		694FF6BA21B8DA9300E79120 /* Build configuration list for PBXProject "HelloMapKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				69AEFE371DDD61F5005A12BD /* Debug */,
-				69AEFE381DDD61F5005A12BD /* Release */,
+				694FF6CF21B8DA9500E79120 /* Debug */,
+				694FF6D021B8DA9500E79120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		69AEFE391DDD61F5005A12BD /* Build configuration list for PBXNativeTarget "HelloMapKit" */ = {
+		694FF6D121B8DA9500E79120 /* Build configuration list for PBXNativeTarget "HelloMapKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				69AEFE3A1DDD61F5005A12BD /* Debug */,
-				69AEFE3B1DDD61F5005A12BD /* Release */,
+				694FF6D221B8DA9500E79120 /* Debug */,
+				694FF6D321B8DA9500E79120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		69AEFE3C1DDD61F5005A12BD /* Build configuration list for PBXNativeTarget "HelloMapKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				69AEFE3D1DDD61F5005A12BD /* Debug */,
-				69AEFE3E1DDD61F5005A12BD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		69AEFE3F1DDD61F5005A12BD /* Build configuration list for PBXNativeTarget "HelloMapKitUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				69AEFE401DDD61F5005A12BD /* Debug */,
-				69AEFE411DDD61F5005A12BD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 69AEFE091DDD61F4005A12BD /* Project object */;
+	rootObject = 694FF6B721B8DA9300E79120 /* Project object */;
 }
