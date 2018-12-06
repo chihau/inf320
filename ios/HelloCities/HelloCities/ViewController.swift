@@ -2,15 +2,13 @@
 //  ViewController.swift
 //  HelloCities
 //
-//  Created by Chihau Chau on 17-11-16.
-//  Copyright © 2016 Chihau Chau. All rights reserved.
+//  Created by Chihau Chau on 06-12-18.
+//  Copyright © 2018 Chihau Chau. All rights reserved.
 //
 
 import UIKit
-import Foundation
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     
     let ciudades = ["New York, NY", "Los Angeles, CA", "Chicago, IL", "Houston, TX",
@@ -22,17 +20,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let coordenadas:[(lat: Double, lon: Double)] = [(40.7033127, -73.979681), (34.0204989, -118.4117325), (41.8337329, -87.7321555), (29.817178,-95.4012915), (40.0047528,-75.1180329), (33.6054149,-112.125051), (32.8245525,-117.0951632), (29.4814305,-98.5144044), (32.8206645,-96.7313396), (42.352711,-83.099205), (37.2970155,-121.8174109), (39.7797845,-86.13275), (30.34499,-81.720457), (37.7577,-122.4376), (39.9829515,-82.990829), (30.3077609,-97.7534014), (35.129186,-89.970787), (39.2847064,-76.6204859), (35.2031535,-80.8395259), (32.800813,-97.2893189)]
 
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        tableView.dataSource = self
-        tableView.delegate = self
-
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        tableView.dataSource = self;
+        tableView.delegate = self;
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -61,6 +55,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
         }
     }
+
 
 }
 
