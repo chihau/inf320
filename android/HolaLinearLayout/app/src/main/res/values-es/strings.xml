@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">HolaLinearLayout</string>
-    <string name="tv_red">rojo</string>
-    <string name="tv_green">verde</string>
-    <string name="tv_blue">azul</string>
-    <string name="tv_yellow">amarillo</string>
-    <string name="tv_one">fila uno</string>
-    <string name="tv_two">fila dos</string>
-    <string name="tv_three">fila tres</string>
-    <string name="tv_four">fila cuatro</string>
+    <string name="red">Rojo</string>
+    <string name="green">Verde</string>
+    <string name="blue">Azul</string>
+    <string name="yellow">Amarillo</string>
+    <string name="one">Uno</string>
+    <string name="two">Dos</string>
+    <string name="three">Tres</string>
+    <string name="four">Cuatro</string>
 </resources>
