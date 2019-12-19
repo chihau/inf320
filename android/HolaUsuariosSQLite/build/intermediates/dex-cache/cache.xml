@@ -2,11 +2,32 @@
 <items version="2" >
 
     <item
-        jar="/Users/chihau/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jar="/Users/chihau/AndroidStudioProjects/gechs/HolaUsuariosSQLite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
-        <dex dex="/Users/chihau/AndroidStudioProjects/HolaUsuariosSQLite/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-62efeb2b3d88f54c2b1bb2772dca10e05126144c.jar" />
+        revision="23.0.0"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/chihau/AndroidStudioProjects/gechs/HolaUsuariosSQLite/app/build/intermediates/pre-dexed/debug/classes-0b668508841f2a7720ae378bc27620f22e548adb.jar" />
+    </item>
+    <item
+        jar="/Users/chihau/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/chihau/AndroidStudioProjects/gechs/HolaUsuariosSQLite/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-0ba2dc302927416be8a6a046f18d8a772303b941.jar" />
+    </item>
+    <item
+        jar="/Users/chihau/AndroidStudioProjects/gechs/HolaUsuariosSQLite/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/chihau/AndroidStudioProjects/gechs/HolaUsuariosSQLite/app/build/intermediates/pre-dexed/debug/classes-507e99c2253d4d554e42e9ca2043ee82929e5880.jar" />
+    </item>
+    <item
+        jar="/Users/chihau/AndroidStudioProjects/gechs/HolaUsuariosSQLite/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/chihau/AndroidStudioProjects/gechs/HolaUsuariosSQLite/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-df80140b51acc4453776a1a30cc410f469c36dd2.jar" />
     </item>
 
 </items>
