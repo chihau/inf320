@@ -1,19 +1,18 @@
 package cl.chihau.holaactionbar;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.widget.TextView;
 
-/**
- * Created by chihau on 15-04-15.
- */
-public class SearchActivity extends ActionBarActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class SearchActivity extends AppCompatActivity {
+
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView tv = (TextView) findViewById(R.id.textview1);
+        TextView tv = findViewById(R.id.textview1);
         tv.setText("Actividad 2 (Search)");
     }
 }
