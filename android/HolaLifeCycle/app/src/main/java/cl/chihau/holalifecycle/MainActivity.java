@@ -6,7 +6,7 @@ import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String TAG = "HolaLogs";
+    private static final String TAG = "HolaLifeCycle";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
