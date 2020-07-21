@@ -35,12 +35,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             mapa.setMapType(GoogleMap.MAP_TYPE_HYBRID);
 
             mapa.addMarker(new MarkerOptions()
-                    .position(new LatLng(-33.036652, -71.595088))
+                    .position(new LatLng(-33.0366, -71.5952))
                     .title("Entrada")
                     .draggable(true)
             );
         } else {
-            Log.e("HolaMapas", "mapa nulo");
+            Log.d("HolaMapas", "Mapa nulo");
         }
     }
 }
