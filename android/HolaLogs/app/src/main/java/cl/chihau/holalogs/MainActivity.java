@@ -17,6 +17,6 @@ public class MainActivity extends AppCompatActivity {
         Log.w(LOGTAG, "Mensaje de advertencia");
         Log.i(LOGTAG, "Mensaje de información");
         Log.d(LOGTAG, "Mensaje de depuración");
-        Log.v(LOGTAG, "Mensaje clásico");
+        Log.v(LOGTAG, "Mensaje de clásico");
     }
 }
