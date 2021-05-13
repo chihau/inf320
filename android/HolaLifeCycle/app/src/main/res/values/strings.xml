@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">HolaLifeCycle</string>
+    <string name="instrucciones">
+        Cuando la app inicia:\n
+        - Presionar el botón BACK\n
+        - Presionar el botón HOME\n
+        - Apagar la pantalla\n
+        - Otra actividad aparece encima\n
+        - Cambiar la orientación de la pantalla</string>
 </resources>
