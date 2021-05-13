@@ -1,11 +1,3 @@
 <resources>
     <string name="app_name">HolaLinearLayout</string>
-    <string name="red">Red</string>
-    <string name="green">Green</string>
-    <string name="blue">Blue</string>
-    <string name="yellow">Yellow</string>
-    <string name="one">One</string>
-    <string name="two">Two</string>
-    <string name="three">Three</string>
-    <string name="four">four</string>
 </resources>
