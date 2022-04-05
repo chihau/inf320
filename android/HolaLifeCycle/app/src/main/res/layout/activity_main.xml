@@ -9,7 +9,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/instrucciones"
+        android:text="
+            Cuando la app parte:\n
+            - El usuario puede presionar el botón BACK\n
+            - El usuario puede presionar el botón HOME\n
+            - El usuario puede apagar la pantalla\n
+            - El usuario puede abrir otra Actividad\n
+            - El usuario puede cambiar la orientación del teléfono\n
+        "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
