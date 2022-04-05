@@ -6,7 +6,7 @@ import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String LOGTAG = "HolaLogs";
+    public final static String LOGTAG = "HolaLogs";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,6 @@ public class MainActivity extends AppCompatActivity {
         Log.w(LOGTAG, "Mensaje de advertencia");
         Log.i(LOGTAG, "Mensaje de información");
         Log.d(LOGTAG, "Mensaje de depuración");
-        Log.v(LOGTAG, "Mensaje de clásico");
+        Log.v(LOGTAG, "Mensaje clásico");
     }
 }
