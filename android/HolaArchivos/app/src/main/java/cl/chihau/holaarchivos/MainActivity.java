@@ -18,6 +18,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onResume() {
+    protected void onResume() {
         super.onResume();
 
         if (chequearPermiso()) {
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             txtResultado.setText("Archivo creado!");
         } catch (Exception e) {
             Log.e("HolaArchivos", "Error al escribir el archivo en memoria interna");
-            txtResultado.setText("Erro al escribir el archivo en memoria interna");
+            txtResultado.setText("Error al escribir el archivo en memoria interna");
         }
     }
 
@@ -102,16 +103,14 @@ public class MainActivity extends AppCompatActivity {
                 fout.close();
                 txtResultado.setText("Archivo SD creado!");
             } catch (Exception ex) {
-                Log.e("HolaArchivo", "Error al escribir el archivo en memoria externa");
+                Log.e("HolaArchivos", "Error al escribir el archivo en memoria externa");
                 txtResultado.setText("Error al escribir el archivo en memoria externa");
             }
         } else {
-            Log.e("HolaArchivos", "Error: la tarjeta SD no se encuentra o no tiene permisos" +
-                    "de escritura");
-            txtResultado.setText("Error: la tarjeta SD no se encuentra o no tiene permisos" +
-                    "de escritura");
+            Log.e("HolArchivos", "Error: la tarjeta SD no se encuentra disponible o no tiene " +
+                    "permisos de escritura");
+            txtResultado.setText("Error: la tarjeta SD no se encuentra disponible o no tiene permisos de escritura");
         }
-
     }
 
     public void leerSD(View view) {
@@ -122,11 +121,34 @@ public class MainActivity extends AppCompatActivity {
             String texto = fin.readLine();
             fin.close();
             txtResultado.setText(texto);
-        } catch (Exception e) {
-            Log.e("HolaArchivos", "Error: la tarjeta SD no se encuentra o no tiene permisos" +
-                    "de lectura");
-            txtResultado.setText("Error: la tarjeta SD no se encuentra o no tiene permisos" +
-                    "de lectura");
+        } catch (Exception ex){
+            Log.e("HolaArchivos", "Error: la tarjeta SD no se encuentra o no tiene permisos");
+            txtResultado.setText("Error: la tarjeta SD no se encuentra o no tiene permisos");
+        }
+    }
+
+    private boolean chequearPermiso() {
+        int result = ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
+
+        return result == PackageManager.PERMISSION_GRANTED;
+    }
+
+    private void pedirPermiso() {
+        ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.WRITE_EXTERNAL_STORAGE}, 200);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        if (requestCode == 200) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                btnEscribirSD.setEnabled(true);
+                btnLeerSD.setEnabled(true);
+            } else {
+                btnEscribirSD.setEnabled(false);
+                btnLeerSD.setEnabled(false);
+            }
         }
     }
 
@@ -138,33 +160,9 @@ public class MainActivity extends AppCompatActivity {
             fraw.close();
             brin.close();
             txtResultado.setText(texto);
-        } catch (Exception e) {
+        } catch (Exception ex) {
             Log.e("HolaArchivos", "Error al leer el archivo RAW");
             txtResultado.setText("Error al leer el archivo RAW");
-        }
-    }
-
-    private boolean chequearPermiso() {
-        int result = ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
-
-        return result == PackageManager.PERMISSION_GRANTED;
-    }
-
-    private void pedirPermiso() {
-        ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                200);
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
-        if (requestCode == 200) {
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                btnEscribirSD.setEnabled(true);
-                btnLeerSD.setEnabled(true);
-            } else {
-                btnEscribirSD.setEnabled(false);
-                btnLeerSD.setEnabled(false);
-            }
         }
     }
 }
